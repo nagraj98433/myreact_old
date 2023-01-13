@@ -1,0 +1,187 @@
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+body {
+  height: 1500px;
+}
+.header {
+  background-color: #3a5d7b;
+  color: #b4f2e1;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.TodoList_container {
+  max-width: 32%;
+  /* height: 400px; */
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.TodoList_header {
+  background-color: black;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  height: 34px;
+  text-align: center;
+  color: #b4f2e1b3;
+}
+.inputField {
+  text-align: center;
+  padding: 10px 0;
+}
+.inputField input,
+.searchfield input {
+  /* display: block; */
+  width: 50%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: 0.5s ease all;
+}
+.mybtn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  /* -webkit-user-select: none; */
+  /* -moz-user-select: none; */
+  /* user-select: none; */
+  background-color: #0d6efd;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  margin: 0px 0px 0px 10px;
+}
+.searchfield input {
+  background-color: #b4f2e1;
+  border: 1px solid #9e49b3;
+  width: 8%;
+  transition: 0.5s ease all;
+}
+.inputField input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  width: 70%;
+  transition: 0.5s ease all;
+}
+.mybtn:focus {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+/* .searchfield input:focus {
+  width: 70%;
+  color: #fff;
+  background-color: #1d1a1a;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+} */
+.btn {
+  color: #fff;
+  background-color: #bbcbe2;
+  border-color: #0d6efd;
+}
+.btn:focus {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  /* color: #212529; */
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  /* -webkit-user-select: none; */
+  /* -moz-user-select: none; */
+  /* user-select: none; */
+  /* background-color: transparent; */
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  margin: 0px 0px 0px 10px;
+  border-radius: 50%;
+}
+.TodoItems {
+  max-height: 380px;
+  min-height: 315px;
+  overflow-y: auto;
+  /* background-color: #0000009c; */
+  /* padding-bottom: 20px; */
+}
+.TodoItems ul {
+  list-style-type: none;
+  padding: 0 0;
+}
+.TodoItems ul p {
+  display: flex;
+  background-color: #f0f0ff;
+  padding: 10px 10px 10px 10px;
+  /* border-bottom-left-radius: 18px; */
+  border-top-left-radius: 18px;
+  margin: 10px;
+}
+.TodoItems ul p li {
+  font-style: italic;
+  font-variant: small-caps;
+  font-size: 25px;
+}
+.delete {
+  color: #7b7878;
+  margin-right: 15px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.delete:hover {
+  color: red;
+}
+.TodoItems_container {
+  padding: 10px 0 20px 0;
+  max-height: 380px;
+  min-height: 315px;
+}
+.input_error {
+  margin: 0px 90px 0px 0px;
+  font-size: 12px;
+  color: red;
+  display: block;
+}
+.input_error2 {
+  display: none;
+}
